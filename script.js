@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  var TITLE = 'Household Income for Select US Geographies, 2018';
+  var TITLE = 'Regional Forest Change';
 
   // `false` for vertical (column) chart, `true` for horizontal bar
   var HORIZONTAL = false;
@@ -9,29 +9,29 @@ $(document).ready(function() {
   var STACKED = false;  
 
   // Which column defines "bucket" names?
-  var LABELS = 'geo';
+  var LABELS = 'year';
 
   // For each column representing a series, define its name and color
   var SERIES = [
     {
-      column: 'median',
-      name: 'Median Income',
-      color: 'grey',
-      errorColumn: 'median_moe'
+      column: 'def',
+      name: 'deforestation',
+      color: 'red',
+      errorColumn: 'def_error'
     },
     {
-      column: 'mean',
-      name: 'Mean Income',
-      color: '#cc9999',
-      errorColumn: 'mean_moe'
+      column: 'deg',
+      name: 'degradation',
+      color: 'brown',
+      errorColumn: 'deg_errpr'
     }
   ];
 
   // x-axis label and label in tooltip
-  var X_AXIS = 'Geography'; 
+  var X_AXIS = 'Year'; 
   
   // y-axis label and label in tooltip
-  var Y_AXIS = 'US Dollars';
+  var Y_AXIS = 'Area (ha)';
 
   // `true` to show the grid, `false` to hide
   var SHOW_GRID = true;
