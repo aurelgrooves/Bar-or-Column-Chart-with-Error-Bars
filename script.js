@@ -22,7 +22,7 @@ $(document).ready(function() {
     {
       column: 'deg',
       name: 'degradation',
-      color: 'brown',
+      color: 'orange',
       errorColumn: 'deg_errpr'
     }
   ];
